@@ -176,13 +176,32 @@
             <ul class="navbar-nav pt-lg-3">
 
                 <li class="nav-item">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="./ppg.html" >
+                    <li class="nav-item">
+                    <a class="nav-link" href="./index.html" >
                       <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
                       </span>
                       <span class="nav-link-title">
                         Dashboard
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./ppg.html" >
+                      <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                          <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1"></path>
+                          <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                          <path d="M17 10h2a2 2 0 0 1 2 2v1"></path>
+                          <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                          <path d="M3 13v-1a2 2 0 0 1 2 -2h2"></path>
+                        </svg>
+                      </span>
+                      <span class="nav-link-title">
+                        Daftar Peserta
                       </span>
                     </a>
                   </li>
@@ -715,14 +734,13 @@
                                       <th>Gelombang</th>
                                       <th>Tahapan</th>
                                       <th>Pemanggilan</th>
-                                      <th>Seleksi</th>
-                                      <th>Aksi</th>
-                                      <th class="text-center"></th>
+                                      <th>Lama Bertugas</th>
+                                      <th>Status</th>
                                     </tr>
                                   </thead>
                                   
                                 </table>
-                              </div>
+                            </div>
                             
                             <div class="accordion" id="accordion-example">
                                 <div class="accordion-item">
@@ -733,7 +751,7 @@
                                         <div class="col">2</div>
                                         <div class="col">Tahap 2</div>
                                         <div class="col">2</div>
-                                        <div class="col">2</div>
+                                        <div class="col">2 Tahun</div>
                                         <div class="col">
                                               <span class="badge bg-green">PRIORITAS</span>
                                         </div>
@@ -742,7 +760,99 @@
                                   </h2>
                                   <div id="collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
                                     <div class="accordion-body pt-0">
-                                      <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                      <div class="row">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                  <h3 class="card-title fw-bold">Gelombang 1</h3>
+                                                      <div class="text-muted">Seleksi Administrasi: 20 Nov 2019</div>
+                                                      <div class="text-muted">Seleksi Akademik: 25 Nov 2019</div>
+                                                  <ul class="steps steps-vertical mt-2">
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">13 Nov 2019</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">16 Nov 2019</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Nov 2019</div>
+                                                    </li>
+                                                    <li class="step-item active">
+                                                      <div class="h4 m-0">Tahap 4</div>
+                                                      <div class="text-muted">Selesai</div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                  <h3 class="card-title fw-bold">Gelombang 2</h3>
+                                                    <div class="text-muted">Seleksi Administrasi: 10 Okt 2019</div>
+                                                      <div class="text-muted">Seleksi Akademik: 15 Okt 2019</div>
+                                                  <ul class="steps steps-vertical mt-2">
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">16 Okt 2019</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">18 Okt 2019</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Okt 2019</div>
+                                                    </li>
+                                                    <li class="step-item active">
+                                                      <div class="h4 m-0">Tahap 4</div>
+                                                      <div class="text-muted">Selesai</div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                  <h3 class="card-title fw-bold">Gelombang 3</h3>
+                                                  <div class="text-muted">Seleksi Administrasi: 10 Des 2019</div>
+                                                      <div class="text-muted">Seleksi Akademik: 15 Des 2019</div>
+                                                  <ul class="steps steps-vertical mt-2">
+                                                    <li class="step-item active">
+                                                      <div class="h4 m-0">Tahapan 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">16 Des 2019</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 2</div>
+                                                      <div class="h5">Pengumpulan Berkas</div>
+                                                      <div class="h5">18 Des 2019</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 3</div>
+                                                      <div class="h5">Pengumuman</div>
+                                                      <div class="h5">20 Okt 2019</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 4</div>
+                                                      <div class="h5">Selesai</div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                      </div>
+
                                     </div>
                                   </div>
                                 </div>
@@ -754,7 +864,7 @@
                                             <div class="col">1</div>
                                             <div class="col">Tahap 3</div>
                                             <div class="col">3</div>
-                                            <div class="col">3</div>
+                                            <div class="col">3 Tahun</div>
                                             <div class="col">
                                                   <span class="badge bg-gray">NON PRIORITAS</span>
                                             </div>
@@ -763,7 +873,98 @@
                                   </h2>
                                   <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
                                     <div class="accordion-body pt-0">
-                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                      <div class="row">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                  <h3 class="card-title fw-bold">Gelombang 1</h3>
+                                                      <div class="text-muted">Seleksi Administrasi: 20 Nov 2020</div>
+                                                      <div class="text-muted">Seleksi Akademik: 25 Nov 2020</div>
+                                                  <ul class="steps steps-vertical mt-2">
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">13 Nov 2020</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">16 Nov 2020</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Nov 2020</div>
+                                                    </li>
+                                                    <li class="step-item active">
+                                                      <div class="h4 m-0">Tahap 4</div>
+                                                      <div class="text-muted">Selesai</div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                  <h3 class="card-title fw-bold">Gelombang 2</h3>
+                                                    <div class="text-muted">Seleksi Administrasi: 10 Okt 2020</div>
+                                                      <div class="text-muted">Seleksi Akademik: 15 Okt 2020</div>
+                                                  <ul class="steps steps-vertical mt-2">
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">16 Okt 2020</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">18 Okt 2020</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Okt 2020</div>
+                                                    </li>
+                                                    <li class="step-item active">
+                                                      <div class="h4 m-0">Tahap 4</div>
+                                                      <div class="text-muted">Selesai</div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                  <h3 class="card-title fw-bold">Gelombang 3</h3>
+                                                  <div class="text-muted">Seleksi Administrasi: 10 Des 2020</div>
+                                                      <div class="text-muted">Seleksi Akademik: 15 Des 2020</div>
+                                                  <ul class="steps steps-vertical mt-2">
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">16 Des 2020</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">18 Des 2020</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Okt 2020</div>
+                                                    </li>
+                                                    <li class="step-item active">
+                                                      <div class="h4 m-0">Tahapan 4</div>
+                                                      <div class="h5">Selesai</div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -775,7 +976,7 @@
                                             <div class="col">1</div>
                                             <div class="col">Tahap 3</div>
                                             <div class="col">3</div>
-                                            <div class="col">3</div>
+                                            <div class="col">4 tahun</div>
                                             <div class="col">
                                                   <span class="badge bg-yellow">ALUMNI</span>
                                             </div>
@@ -784,7 +985,99 @@
                                   </h2>
                                   <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
                                     <div class="accordion-body pt-0">
-                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                      <div class="row">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                  <h3 class="card-title fw-bold">Gelombang 1</h3>
+                                                      <div class="text-muted">Seleksi Administrasi: 20 Nov 2021</div>
+                                                      <div class="text-muted">Seleksi Akademik: 25 Nov 2021</div>
+                                                  <ul class="steps steps-vertical mt-2">
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">13 Nov 2021</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">16 Nov 2021</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Nov 2021</div>
+                                                    </li>
+                                                    <li class="step-item active">
+                                                      <div class="h4 m-0">Tahap 4</div>
+                                                      <div class="text-muted">Selesai</div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                  <h3 class="card-title fw-bold">Gelombang 2</h3>
+                                                    <div class="text-muted">Seleksi Administrasi: 10 Okt 2021</div>
+                                                      <div class="text-muted">Seleksi Akademik: 15 Okt 2021</div>
+                                                  <ul class="steps steps-vertical mt-2">
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">16 Okt 2021</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">18 Okt 2021</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Okt 2021</div>
+                                                    </li>
+                                                    <li class="step-item active">
+                                                      <div class="h4 m-0">Tahap 4</div>
+                                                      <div class="text-muted">Selesai</div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                  <h3 class="card-title fw-bold">Gelombang 3</h3>
+                                                  <div class="text-muted">Seleksi Administrasi: 10 Des 2021</div>
+                                                      <div class="text-muted">Seleksi Akademik: 15 Des 2021</div>
+                                                  <ul class="steps steps-vertical mt-2">
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">16 Des 2021</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">18 Des 2021</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Okt 2021</div>
+                                                    </li>
+                                                    <li class="step-item active">
+                                                      <div class="h4 m-0">Tahapan 4</div>
+                                                      <div class="h5">Selesai</div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                      </div>
+
                                     </div>
                                   </div>
                                 </div>
@@ -792,11 +1085,11 @@
                                   <h2 class="accordion-header" id="heading-4">
                                     <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false">
                                         <div class="row w-full">
-                                            <div class="col">2021</div>
+                                            <div class="col">2022</div>
                                             <div class="col">1</div>
                                             <div class="col">Tahap 3</div>
                                             <div class="col">3</div>
-                                            <div class="col">3</div>
+                                            <div class="col">5 Tahun</div>
                                             <div class="col">
                                                   <span class="badge bg-red">DALAM PINALTI</span>
                                             </div>
@@ -809,23 +1102,28 @@
                                         <div class="col">
                                             <div class="card">
                                                 <div class="card-body">
-                                                  <h3 class="card-title">Steps vertical</h3>
-                                                  <ul class="steps steps-vertical">
+                                                  <h3 class="card-title fw-bold">Gelombang 1</h3>
+                                                      <div class="text-muted">Seleksi Administrasi: 20 Nov 2022</div>
+                                                      <div class="text-muted">Seleksi Akademik: 25 Nov 2022</div>
+                                                  <ul class="steps steps-vertical mt-2">
                                                     <li class="step-item">
-                                                      <div class="h4 m-0">Order received</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa cum expedita ipsam laborum nam ratione reprehenderit sed sint tenetur!</div>
+                                                      <div class="h4 m-0">Tahap 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">13 Nov 2022</div>
                                                     </li>
                                                     <li class="step-item">
-                                                      <div class="h4 m-0">Order received</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet.</div>
+                                                      <div class="h4 m-0">Tahap 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">16 Nov 2022</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahap 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Nov 2022</div>
                                                     </li>
                                                     <li class="step-item active">
-                                                      <div class="h4 m-0">Out for delivery</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet.</div>
-                                                    </li>
-                                                    <li class="step-item">
-                                                      <div class="h4 m-0">Finalized</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet.</div>
+                                                      <div class="h4 m-0">Tahap 4</div>
+                                                      <div class="text-muted">Selesai</div>
                                                     </li>
                                                   </ul>
                                                 </div>
@@ -834,23 +1132,28 @@
                                         <div class="col">
                                             <div class="card">
                                                 <div class="card-body">
-                                                  <h3 class="card-title">Steps vertical</h3>
-                                                  <ul class="steps steps-vertical">
+                                                  <h3 class="card-title fw-bold">Gelombang 2</h3>
+                                                    <div class="text-muted">Seleksi Administrasi: 10 Okt 2022</div>
+                                                      <div class="text-muted">Seleksi Akademik: 15 Okt 2022</div>
+                                                  <ul class="steps steps-vertical mt-2">
                                                     <li class="step-item">
-                                                      <div class="h4 m-0">Order received</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa cum expedita ipsam laborum nam ratione reprehenderit sed sint tenetur!</div>
+                                                      <div class="h4 m-0">Tahapan 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">16 Okt 2022</div>
                                                     </li>
                                                     <li class="step-item">
-                                                      <div class="h4 m-0">Order received</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet.</div>
+                                                      <div class="h4 m-0">Tahapan 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">18 Okt 2022</div>
+                                                    </li>
+                                                    <li class="step-item">
+                                                      <div class="h4 m-0">Tahapan 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Okt 2022</div>
                                                     </li>
                                                     <li class="step-item active">
-                                                      <div class="h4 m-0">Out for delivery</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet.</div>
-                                                    </li>
-                                                    <li class="step-item">
-                                                      <div class="h4 m-0">Finalized</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet.</div>
+                                                      <div class="h4 m-0">Tahap 4</div>
+                                                      <div class="text-muted">Selesai</div>
                                                     </li>
                                                   </ul>
                                                 </div>
@@ -859,29 +1162,33 @@
                                         <div class="col">
                                             <div class="card">
                                                 <div class="card-body">
-                                                  <h3 class="card-title">Steps vertical</h3>
-                                                  <ul class="steps steps-vertical">
+                                                  <h3 class="card-title fw-bold">Gelombang 3</h3>
+                                                  <div class="text-muted">Seleksi Administrasi: 10 Des 2022</div>
+                                                      <div class="text-muted">Seleksi Akademik: 15 Des 2022</div>
+                                                  <ul class="steps steps-vertical mt-2">
                                                     <li class="step-item">
-                                                      <div class="h4 m-0">Order received</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa cum expedita ipsam laborum nam ratione reprehenderit sed sint tenetur!</div>
+                                                      <div class="h4 m-0">Tahapan 1</div>
+                                                      <div class="text-muted">Pendaftaran dan Seleksi Administrasi</div>
+                                                      <div class="text-muted">16 Des 2022</div>
                                                     </li>
                                                     <li class="step-item">
-                                                      <div class="h4 m-0">Order received</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet.</div>
+                                                      <div class="h4 m-0">Tahapan 2</div>
+                                                      <div class="text-muted">Pengumpulan Berkas</div>
+                                                      <div class="text-muted">18 Des 2022</div>
                                                     </li>
                                                     <li class="step-item active">
-                                                      <div class="h4 m-0">Out for delivery</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet.</div>
+                                                      <div class="h4 m-0">Tahapan 3</div>
+                                                      <div class="text-muted">Pengumuman</div>
+                                                      <div class="text-muted">20 Okt 2022</div>
                                                     </li>
                                                     <li class="step-item">
-                                                      <div class="h4 m-0">Finalized</div>
-                                                      <div class="text-muted">Lorem ipsum dolor sit amet.</div>
+                                                      <div class="h4 m-0">Tahapan 4</div>
+                                                      <div class="h5">Selesai</div>
                                                     </li>
                                                   </ul>
                                                 </div>
                                               </div>
                                         </div>
-
                                       </div>
                                     </div>
                                   </div>

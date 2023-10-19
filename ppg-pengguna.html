@@ -337,7 +337,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="./ppg-form.html">
                                 <span
                                     class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
@@ -360,7 +360,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="./ppg-pengguna.html" >
                               <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -857,7 +857,7 @@
                   Overview
                 </div> -->
                             <h2 class="page-title">
-                                Form Event
+                                Pengguna
                             </h2>
                         </div>
                         
@@ -869,58 +869,7 @@
             <div class="page-body">
                 <div class="container-xl">
                     <div class="row row-deck row-cards">
-                        <div class="col-sm-6 col-lg-12">
-                            <form class="card">
-                                <div class="card-body">
-                                    <!-- <h3 class="card-title">Edit Profile</h3> -->
-                                    <div class="row row-cards">
-                                        <div class="col-md-3">
-                                            <div class="py-2">
-                                                <!-- <label class="form-label">Company</label> -->
-                                                <input type="text" value="" class="form-control"
-                                                    placeholder="Cari Event">
-                                                <span class="input-icon-addon">
-                                                    <!-- Download SVG icon from http://tabler-icons.io/i/search -->
-                                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg> -->
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6 col-md-3">
-                                            <div class="py-2" id="datepicker">
-                                                <!-- <label class="form-label">Email address</label> -->
-                                                <input type="date" class="form-control">
-                                            </div>
-                                            <script>
-                                                
-                                            </script>
-                                        </div>
-
-                                        <div class="col-sm-6 col-md-3">
-                                            <div class="py-2">
-                                                <!-- <label class="form-label">Email address</label> -->
-                                                <select class="form-select">
-                                                    <option value="1">Pilih Gelombang</option>
-                                                    <option value="2">Gelombang 1</option>
-                                                    <option value="2">Gelombang 2</option>
-                                                    <option value="2">Gelombang 3</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6 col-md-3 text-end">
-                                            <div class="py-2">
-                                                <!-- <label class="form-label">Email address</label> -->
-                                                <div type="submit" class="btn btn-primary w-full">Cari</div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
+                        
 
                         <!-- tabel Event -->
 
@@ -937,7 +886,7 @@
                                             <path d="M11 7l6 6"></path>
                                             <path d="M4 16l11.7 -11.7a1 1 0 0 1 1.4 0l2.6 2.6a1 1 0 0 1 0 1.4l-11.7 11.7h-4v-4z"></path>
                                          </svg>
-                                        Tambah Event
+                                        Tambah Pengguna
                                       </a>
                                     </div>
                                       
@@ -952,12 +901,12 @@
                                               </div>
                                               entries
                                             </div>
-                                            <!-- <div class="ms-auto text-muted">
-                                              Search:
+                                            <div class="ms-auto text-muted">
+                                              Cari:
                                               <div class="ms-2 d-inline-block">
                                                 <input type="text" class="form-control form-control-sm" aria-label="Search invoice">
                                               </div>
-                                            </div> -->
+                                            </div>
                                           </div>
                                         </div>
                                         <div class="table-responsive">
@@ -968,33 +917,61 @@
                                                 <th class="w-1">No. 
                                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-thick" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>
                                                 </th>
-                                                <th>Nama Event</th>
-                                                <th>Gelombang</th>
-                                                <th>Tahun</th>
-                                                <th>Daya Tampung</th>
-                                                <th>LPTK</th>
-                                                <th>Rombel</th>
-                                                <th class="text-center">Action</th>
+                                                <th>Username</th>
+                                                <th>Nama Lengkap</th>
+                                                <th>Status</th>
+                                                <th class="w-1 text-center">Action</th>
                                               </tr>
                                             </thead>
                                             <tbody>
                                               <tr>
                                                 <!-- <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td> -->
-                                                <td><span class="text-muted">001401</span></td>
-                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Event 1</a></td>
+                                                <td><span class="text-muted">1</span></td>
+                                                <td><a href="#" class="text-reset" tabindex="-1">peserta@gmail.com</a></td>
                                                 <td>
-                                                  1
+                                                  Peserta Pertama
                                                 </td>
                                                 <td>
-                                                  2023
+                                                    <label class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox"  checked>
+                                                        <!-- <span class="form-check-label">aktif</span> -->
+                                                    </label>
+                                                </td>
+                                                <!-- <td>20</td> -->
+                                                <!-- <td>Universitas Indonesia</td> -->
+                                                <!-- <td>50</td> -->
+                                                <td class="">
+                                                    <div class="btn-list flex-nowrap ">
+                                                        <a href="#" class="btn btn-success  text-end justify-content-end" data-bs-toggle="modal" data-bs-target="#modal-ubah">
+                                                            Ubah
+                                                          </a>
+                                                          <a href="#" class="btn btn-primary text-end justify-content-end" data-bs-toggle="modal" data-bs-target="#modal-lihat">
+                                                            Lihat
+                                                          </a>
+                                                          <a href="#" class="btn btn-danger text-end justify-content-end" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                                            Hapus
+                                                          </a>
+                                                    </div>
+                                                   
+                                                </td>
+                                              </tr>
+
+                                              <tr>
+                                                <!-- <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td> -->
+                                                <td><span class="text-muted">2</span></td>
+                                                <td><a href="#" class="text-reset" tabindex="-1">peserta2@gmail.com</a></td>
+                                                <td>
+                                                  Peserta Kedua
                                                 </td>
                                                 <td>
-                                                  20
+                                                    <label class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox"  checked>
+                                                        <!-- <span class="form-check-label">aktif</span> -->
+                                                    </label>
                                                 </td>
-                                                <td>
-                                                  Universitas Indonesia
-                                                </td>
-                                                <td>50</td>
+                                                <!-- <td>20</td> -->
+                                                <!-- <td>Universitas Indonesia</td> -->
+                                                <!-- <td>50</td> -->
                                                 <td class="text-end">
                                                     <div class="btn-list flex-nowrap">
                                                         <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-ubah">
@@ -1013,55 +990,21 @@
 
                                               <tr>
                                                 <!-- <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td> -->
-                                                <td><span class="text-muted">001401</span></td>
-                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Event 1</a></td>
+                                                <td><span class="text-muted">3</span></td>
+                                                <td><a href="#" class="text-reset" tabindex="-1">peserta@gmail.com</a></td>
                                                 <td>
-                                                  2
-                                                </td>
-                                                <td>
-                                                  2023
+                                                  Peserta Tiga
                                                 </td>
                                                 <td>
-                                                  12
+                                                    <label class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox">
+                                                        <!-- <span class="form-check-label">aktif</span> -->
+                                                    </label>
                                                 </td>
-                                                <td>
-                                                  Universitas Sebelas Maret
-                                                </td>
-                                                <td>40</td>
-                                                <td class="text-end">
-                                                    <div class="btn-list flex-nowrap">
-                                                        <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-ubah">
-                                                            Ubah
-                                                          </a>
-                                                          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-lihat">
-                                                            Lihat
-                                                          </a>
-                                                          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
-                                                            Hapus
-                                                          </a>
-                                                    </div>
-                                                   
-                                                </td>
-                                              </tr>
-
-                                              <tr>
-                                                <!-- <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td> -->
-                                                <td><span class="text-muted">001401</span></td>
-                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Event 1</a></td>
-                                                <td>
-                                                  2
-                                                </td>
-                                                <td>
-                                                  2023
-                                                </td>
-                                                <td>
-                                                  12
-                                                </td>
-                                                <td>
-                                                  Universitas Negeri Semarang
-                                                </td>
-                                                <td>40</td>
-                                                <td class="text-end">
+                                                <!-- <td>20</td> -->
+                                                <!-- <td>Universitas Indonesia</td> -->
+                                                <!-- <td>50</td> -->
+                                                <td class="">
                                                     <div class="btn-list flex-nowrap">
                                                         <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-ubah">
                                                             Ubah
@@ -1144,110 +1087,35 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Tambah Event Baru</h5>
+                    <h5 class="modal-title">Tambah Penggun baru</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label class="form-label">Nama Event</label>
+                        <label class="form-label required">Username</label>
                         <input type="text" class="form-control w-100" name="example-text-input"
-                            placeholder="Masuk Nama Event">
+                            placeholder="Username">
                     </div>
-                    <!-- <label class="form-label">Status</label> -->
-                    <div class="form-selectgroup-boxes row mb-3">
-                        <!-- <div class="col-lg-6">
-                            <label class="form-selectgroup-item">
-                                <input type="radio" name="report-type" value="1" class="form-selectgroup-input" checked>
-                                <span class="form-selectgroup-label d-flex align-items-center p-3">
-                                    <span class="me-3">
-                                        <span class="form-selectgroup-check"></span>
-                                    </span>
-                                    <span class="form-selectgroup-label-content">
-                                        <span class="form-selectgroup-title strong mb-1">Berlansung</span>
-                                        <span class="d-block text-muted">Event sedang berlangsung</span>
-                                    </span>
-                                </span>
-                            </label>
-                        </div> -->
 
-                        
-                        <!-- <div class="col-lg-6">
-                            <label class="form-selectgroup-item">
-                                <input type="radio" name="report-type" value="1" class="form-selectgroup-input">
-                                <span class="form-selectgroup-label d-flex align-items-center p-3">
-                                    <span class="me-3">
-                                        <span class="form-selectgroup-check"></span>
-                                    </span>
-                                    <span class="form-selectgroup-label-content">
-                                        <span class="form-selectgroup-title strong mb-1">Selesai</span>
-                                        <span class="d-block text-muted">Event telah selesai</span>
-                                    </span>
-                                </span>
-                            </label>
-                        </div> -->
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label class="form-label mt-3">Gelombang</label>
-                                    <select class="form-select">
-                                        <option value="1" selected>1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label class="form-label mt-3">Tahun</label>
-                                    <select class="form-select">
-                                        <option value="1" selected>2023</option>
-                                        <option value="2">2024</option>
-                                        <option value="3">2025</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label class="form-label ">Sasaran</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label class="form-label ">Total Rombel</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-
-                            
-                        </div>
-
-                        
-
+                    <div class="mb-3">
+                        <label class="form-label required">Nama Lengkap</label>
+                        <input type="text" class="form-control w-100" name="example-text-input"
+                            placeholder="Isi Nama">
                     </div>
-                    <!-- <div class="row">
-                        <div class="col-lg-8">
-                            <div class="mb-3">
-                                <label class="form-label">Gelombang</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="mb-3">
-                                <label class="form-label">Visibility</label>
-                                <select class="form-select">
-                                    <option value="1" selected>Private</option>
-                                    <option value="2">Public</option>
-                                    <option value="3">Hidden</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div> -->
+
+                    <div class="mb-3">
+                        <label class="form-label required">Kata Sandi</label>
+                        <input type="password" class="form-control w-100" name="example-text-input"
+                            placeholder="Masukan Kata Sandi">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label required">Konfirmasi Kata Sandi</label>
+                        <input type="password" class="form-control w-100" name="example-text-input"
+                            placeholder="Konfirmasi Kata Sandi">
+                    </div>
+                    
+                    
                 </div>
               
                 <div class="modal-footer">
@@ -1256,15 +1124,7 @@
                     </a>
                     
                     <a href="#" class="btn btn-success" data-bs-dismiss="modal">
-                        <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M12 5l0 14" />
-                            <path d="M5 12l14 0" />
-                        </svg>
-                        Buat Event
+                        Simpan
                     </a>
                 </div>
             </div>
@@ -1277,61 +1137,30 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Ubah Event</h5>
+                    <h5 class="modal-title">Ubah Pengguna</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label class="form-label">Nama Event</label>
-                        <!-- <input type="text" class="form-control w-100" name="example-text-input"
-                            placeholder="Masuk Nama Event"> -->
-                        <input type="text" class="form-control" id="floating-input" value="Event 1" autocomplete="off">
+                        <label class="form-label required">Username</label>
+                        <input type="text" class="form-control" id="floating-input" value="peserta@gmail.com" autocomplete="off">
                     </div>
-                    <!-- <label class="form-label">Status</label> -->
-                    <div class="form-selectgroup-boxes row mb-3">
-                        
 
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label class="form-label mt-3">Gelombang</label>
-                                    <input type="text" class="form-control" id="floating-input" value="1" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label class="form-label mt-3">Tahun</label>
-                                    <div class="input-icon mb-2">
-                                        <input class="form-control " placeholder="Select a date" id="datepicker-icon" value="2023-06-20"/>
-                                        <span class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
-                                          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
-                                        </span>
-                                      </div>
-                                    <!-- <input type="date" class="form-control"> -->
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label class="form-label ">Sasaran</label>
-                                    <input type="text" class="form-control" id="floating-input" value="20" autocomplete="off">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label class="form-label ">Total Rombel</label>
-                                    <input type="text" class="form-control" id="floating-input" value="50" autocomplete="off">
-                                </div>
-                            </div>
-
-                            
-                            
-                        </div>
-
-                        
-
+                    <div class="mb-3">
+                        <label class="form-label required">Nama Pengguna</label>
+                        <input type="text" class="form-control" id="floating-input" value="Pengguna Pertama" autocomplete="off">
                     </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required">Kata Sandi</label>
+                        <input type="password" class="form-control" id="floating-input" value="password" autocomplete="off">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required">Konfirmasi Kata Sandi</label>
+                        <input type="password" class="form-control" id="floating-input" value="password" autocomplete="off">
+                    </div>
+                 
                     
                 </div>
               
@@ -1341,7 +1170,8 @@
                     </a>
                     
                     <a href="#" class="btn btn-success" data-bs-dismiss="modal">
-                        Ubah
+                       
+                        Simpan
                     </a>
                 </div>
             </div>
